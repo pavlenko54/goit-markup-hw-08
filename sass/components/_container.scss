@@ -1,8 +1,25 @@
 .container{
-    width: 1230px;
+    // width: 1230px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    
+@media screen and (min-width: 480px)  {
+width: 480px;
+outline: solid 2px blue;
+}
+
+@media screen and (min-width: 768px) {
+    width: 768px;
+    outline: solid 2px tomato;
+}
+
+@media screen and (min-width: 1200px) {
+    width: 1200px;
+    outline: solid 2px teal;
+}
+
     }
     
     .section{
