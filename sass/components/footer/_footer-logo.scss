@@ -1,0 +1,15 @@
+.footer-logo{
+ display: inline-block;
+ margin-bottom: 20px;
+ text-decoration: none;
+
+    color: var(--secondary-text-color);
+
+    font-family: 'Raleway', sans-serif;
+
+    @include font(26px, 700, 1.23, 0.78px);
+}
+
+.footer-logo__span{
+    color: var(--accent-color);
+}

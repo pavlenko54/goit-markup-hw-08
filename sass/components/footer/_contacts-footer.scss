@@ -1,0 +1,33 @@
+.adress-footer{
+    margin-bottom: 9px;
+    color: var(--secondary-text-color);
+
+    @include font(14px, null, 1.71, 0.42px);
+    font-style: normal;
+}
+
+.contacts-footer__wrapper{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contacts-footer{
+    min-width: 231px;
+    display: block;
+    list-style: none;
+}
+.contacts-footer__item:last-child{margin-bottom: 0;}
+
+.contacts-footer__link{
+    margin-bottom: 9px;
+    text-decoration: none;
+    display: inline-block;
+
+color: var(--paragraph-text-color);
+@include font(14px, 500, 2.28, 0.28px);
+
+&:hover,
+&:focus{color: var(--accent-color);
+    transition: 250ms var(--timing-function);
+}
+}

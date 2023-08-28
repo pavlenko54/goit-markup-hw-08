@@ -1,0 +1,52 @@
+.site-nav{
+    padding: 0;
+display: inline-flex;
+margin-right: 344px;
+list-style: none;
+}
+
+.site-nav__item:last-child{
+    margin-right: 0;
+}
+
+.site-nav__item{
+    margin-right: 50px;
+    position: relative;
+}
+
+.site-nav__link{
+display: flex;
+padding-top: 32px;
+padding-bottom: 32px;
+  text-decoration: none;
+
+    color: var(--basic-text-color);
+    
+    @include font(14px, 500, 1.14, 0.02em);
+
+
+&:hover,
+&:focus{
+color: var(--accent-color);
+transition: 250ms var(--timing-function);
+}
+
+}
+.site-nav-link{
+    .active{
+        color: var(--accent-color); 
+     }
+}
+
+.active::after {
+content: "";
+bottom: 0;
+position: absolute;
+display: block;
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background-color: var(--accent-color);
+
+transition: 250ms var(--timing-function);
+}

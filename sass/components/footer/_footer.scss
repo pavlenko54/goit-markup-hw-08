@@ -1,0 +1,7 @@
+.footer__wrapper{
+    @include align-list;
+}
+
+.footer{
+    background: var(--background-color);
+}
