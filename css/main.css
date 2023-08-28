@@ -42,13 +42,11 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    outline: solid 2px blue;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    outline: solid 2px tomato;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -270,17 +268,17 @@ body {
 .advantages__list {
   list-style: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages__list {
-    outline: solid 2px tomato;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .advantages__list .advantages__item + .advantages__item {
-    margin-left: 30px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -288,9 +286,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .advantages__list .advantages__item + .advantages__item {
-    margin-left: 30px;
   }
 }
 
@@ -302,16 +297,12 @@ body {
 
 .advantages__logo {
   width: 450px;
-  height: 120px;
   background-size: 450px 120px;
-  margin-bottom: 30px;
-  margin-top: 30px;
   background-color: var(--background-color-before);
 }
 @media screen and (min-width: 768px) {
   .advantages__logo {
     width: 354px;
-    height: 120px;
     display: block;
     background-size: 354px 120px;
   }
@@ -319,14 +310,23 @@ body {
 @media screen and (min-width: 1200px) {
   .advantages__logo {
     width: 270px;
-    height: 120px;
-    display: block;
     background-size: 270px 120px;
   }
 }
 
 .advantages__icon {
   margin: 25px 190px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__icon {
+    margin: 25px 142px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .advantages__icon {
@@ -348,6 +348,12 @@ body {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advantages__title {
+    text-align: left;
+  }
 }
 
 .advantages__text {
