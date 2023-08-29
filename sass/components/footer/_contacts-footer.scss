@@ -1,9 +1,11 @@
 .adress-footer{
+
     margin-bottom: 9px;
     color: var(--secondary-text-color);
 
     @include font(14px, null, 1.71, 0.42px);
     font-style: normal;
+
 }
 
 .contacts-footer__wrapper{

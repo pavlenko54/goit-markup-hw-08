@@ -1,9 +1,5 @@
 .footer__wrapper{
-   
-
-    @media screen and (min-width: 1200px) {
-        @include align-list;
-      }
+ 
 
     @media screen and (min-width: 768px) {
         display: flex;
@@ -13,6 +9,17 @@
     
       @media screen and (min-width: 1200px) {
         gap: 94px;
+      }
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        @include align-list;
+        display: flex;
+        align-items: baseline;
       }
 }
 
