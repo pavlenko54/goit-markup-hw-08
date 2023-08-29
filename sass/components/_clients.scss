@@ -11,13 +11,14 @@
     
     .clients__list{
         list-style: none;
-        display: flex;
-        justify-content: center;
+        
+        // display: flex;
+        // justify-content: center;
     
     }
     
     .clients__item+.clients__item{
-    margin-left: 30px;
+    // margin-left: 30px;
     }
     
     .clients__link{
