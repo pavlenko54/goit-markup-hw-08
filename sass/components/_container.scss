@@ -1,28 +1,29 @@
-.container{
-    // width: 1230px;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+
+.container {
+    outline: 1px solid red;
     margin: 0 auto;
-    
-@media screen and (min-width: 480px)  {
-width: 480px;
-// outline: solid 2px blue;
-}
-
-@media screen and (min-width: 768px) {
-    width: 768px;
-    // outline: solid 2px tomato;
-}
-
-@media screen and (min-width: 1200px) {
-    width: 1200px;
-    // outline: solid 2px teal;
-}
-
+    padding: 0 15px;
+  
+    // max-width: 480px;
+  
+    @media screen and (min-width: 480px) {
+      width: 480px;
     }
-    
-    .section{
-    padding-bottom: 94px;
-    padding-top: 94px;
+  
+    @media screen and (min-width: 768px) {
+      width: 768px;
     }
+  
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+  
+  .section {
+    margin: 0 auto;
+    padding: 60px 0;
+  
+    @media screen and (min-width: 1200px) {
+      padding: 94px 0;
+    }
+  }
