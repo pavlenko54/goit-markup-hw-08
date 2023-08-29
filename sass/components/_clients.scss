@@ -11,29 +11,40 @@
     
     .clients__list{
         list-style: none;
-        
-        // display: flex;
-        // justify-content: center;
-    
-    }
-    
-    .clients__item+.clients__item{
-    // margin-left: 30px;
+        display: flex;
+        margin: 0;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     .clients__link{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 92px;
+        @media screen and (max-width: 768px) {
+            width: 210px;
+          }
+        
+          @media screen and (min-width: 768px) {
+            width: 226px;
+          }
+        
+          @media screen and (min-width: 1200px) {
+            width: 170px;
+          }
+
+
+
+
     box-sizing: border-box;
-    width: 170px;
-    height: 92px;
     border-radius: 4px;
     border: 1px solid var(--color-icon);
     flex-shrink: 0;
-    justify-content: center;
     fill: var(--color-icon);
-
-    @include align-list;
    
-
     &:hover,
     &:focus {
         border: 1px solid var(--accent-color);
