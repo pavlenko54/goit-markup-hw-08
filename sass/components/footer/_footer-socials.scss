@@ -6,8 +6,17 @@ text-transform: uppercase;
 }
 
 .footer-socials{
-    @media screen and (max-width: 1200px) {
+margin-bottom: 60px;
+    
+@media screen and (min-width: 768px){
+    margin-top: 65px;
+}
+    @media screen and (min-width: 1200px) {
         margin-bottom: 60px;
+           display: block;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 70px;
       }
 
     // display: block;
