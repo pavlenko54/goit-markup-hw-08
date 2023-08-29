@@ -1,17 +1,29 @@
 .portfolio-list{
 
-    margin-bottom: 50px;
-    justify-content: center;
     display: flex;
-    list-style: none;
-.portfolio-list__item + .portfolio-list__item{margin-left: 30px;}
+    row-gap: 15px;
+    flex-wrap: wrap;
+  
+    margin-bottom: 40px;
+  
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+      justify-content: center;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+
+   list-style: none;
 }
 
 .portfolio-list__btn{
+    // width: 100%;
     color: var(--background-color-before);
-    border: 0;
-    border-radius: 4px ;
-    padding: 6px 25px;
+// border: none;
+    padding: 6px 22px;
+    border-radius: 4px;
 
     color: var(--basic-text-color);
 
@@ -34,3 +46,6 @@ text-align: center;
 
 }
 }
+.portfolio-list__item:not(:last-child) {
+    margin-right: 8px;
+  }
