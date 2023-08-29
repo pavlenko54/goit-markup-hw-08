@@ -1,7 +1,28 @@
 .footer__wrapper{
-    @include align-list;
+   
+
+    @media screen and (min-width: 1200px) {
+        @include align-list;
+      }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        gap: 94px;
+      }
 }
 
 .footer{
     background: var(--background-color);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+    }
 }
