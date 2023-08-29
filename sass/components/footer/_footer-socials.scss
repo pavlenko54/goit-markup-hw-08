@@ -1,18 +1,23 @@
 .footer-socials__text{
-
+margin-bottom: 20px;
     color: var(--secondary-text-color);
     @include font(14px, 700, 2.28, 0.42px);
 text-transform: uppercase;
 }
 
 .footer-socials{
-    display: block;
-    gap: 10px;
-    margin-top: 20px;
-    margin-left: 70px;
+    @media screen and (max-width: 1200px) {
+        margin-bottom: 60px;
+      }
+
+    // display: block;
+    // gap: 10px;
+    // margin-top: 20px;
+    // margin-left: 70px;
 }
 
 .footer-socials__list{
+    justify-content: center;
     list-style: none;
     display: flex;
     margin-top: 20px;
