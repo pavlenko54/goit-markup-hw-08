@@ -1014,6 +1014,7 @@ body {
 }
 
 .modal {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1028,6 +1029,21 @@ body {
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
 }
 
 .modal__close-btn {
@@ -1065,6 +1081,11 @@ body {
   line-height: 1.2;
   letter-spacing: 0.6px;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .modal__btn {
@@ -1168,6 +1189,16 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 768px) {
+  .backdrop {
+    padding: 95px 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .backdrop {
+    padding: 208px 159px;
+  }
+}
 
 .backdrop.is-hidden {
   opacity: 0;
@@ -1197,6 +1228,12 @@ body {
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-text::-webkit-input-placeholder {
