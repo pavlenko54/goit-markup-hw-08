@@ -1,13 +1,26 @@
 .contacts{
-    display: flex;
-    margin-left: auto;
-    list-style: none;  
+    // display: flex;
+    // margin-left: auto;
+    // list-style: none; 
+    
+    @media screen and (min-width: 1200px){
+        display: flex;
+        margin-left: auto;
+        list-style: none; 
+    } 
     }
     
     .contacts__item{
-        align-items: center;
+        // align-items: center;
+        // & + &{
+        //     margin-left: 50px;
+        // }
+
+        @media screen and (min-width: 1200px){
+            align-items: center;
         & + &{
             margin-left: 50px;
+        }
         }
     }
 
@@ -27,6 +40,7 @@
         color: var(--accent-color);
         transition: 250ms var(--timing-function);
         }
+        
     }
    
     .contacts__icon{
