@@ -1,0 +1,36 @@
+.dropdown__contacts {
+    margin-bottom: 64px;
+    list-style: none;
+  }
+  .dropdown__contact {
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  
+    &:hover,
+        &:focus {
+        color: var(--accent-color);
+        transition: 250ms var(--timing-function);
+        }
+  }
+  
+  .dropdown__contact--small-size {
+    font-size: 24px;
+    color: var(--paragraph-text-color);
+  }
+  
+  .dropdown__icon {
+    display: none;
+    margin-right: 10px;
+    fill: currentColor;
+  
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    transition: 250ms var(--timing-function);
+    }
+  }

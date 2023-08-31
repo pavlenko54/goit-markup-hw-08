@@ -1,18 +1,27 @@
 .header{
     border-bottom: 1px solid #ECECEC;
+    position: relative;
 
+    
     }
 
+    .container--mobile-hidden {
+        display: none;
+        @media screen and (min-width: 768px) {
+          display: block;
+        }
+      }
 
-    .header__container{
-        // display: flex;
-        // align-items: center;
+    .header__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
-        @media screen and (min-width: 1200px){
-            display: flex;
-            align-items: center;
-        } 
-    }
+      .header__items--mobile-hidden {
+        display: none;
+      }
+    
     
    
     
