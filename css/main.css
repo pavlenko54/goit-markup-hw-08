@@ -1066,14 +1066,12 @@ body {
 }
 
 .modal {
-  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: scale(100%);
           transform: scale(100%);
   padding: 40px;
-  width: 528px;
   height: 582px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1082,14 +1080,9 @@ body {
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     position: absolute;
     left: 50%;
     top: 50%;

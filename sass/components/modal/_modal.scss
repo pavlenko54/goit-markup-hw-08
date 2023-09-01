@@ -1,12 +1,12 @@
 .modal{
-    width: 100%;
+    // width: 100%;
  position: absolute;
  top: 50%;
  left: 50%;
  transform: scale(100%);
  padding: 40px;
 
-    width: 528px;
+    // width: 528px;
     height: 582px;
     transform: translate(-50%, -50%);
 
@@ -16,11 +16,11 @@
 
 
     @media screen and (min-width: 480px) {
-        width: 450px;
+        // max-width: 450px;
       }
     
       @media screen and (min-width: 1200px) {
-        width: 528px;
+        max-width: 528px;
     
         position: absolute;
         left: 50%;
